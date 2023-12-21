@@ -42,7 +42,9 @@
 
 Цей проєкт розроблено з любов'ю до ігор і задоволення гравців. Бажаємо вам удачі та веселощів у світі рулетки!
 
-## Youtube
-https://www.youtube.com/watch?v=bN-uskBkAYE&ab_channel=PavloNovistky
+## Links
+[Dowload APK](https://drive.google.com/file/d/1s0KXYDqg6oYujBQUX7PMGh0RcZ2bRp9P/view?usp=sharing)
+[Video](https://www.youtube.com/watch?v=bN-uskBkAYE&ab_channel=PavloNovistky)
 
-## APK
+## Контактна інформація
+Для будь-яких питань чи коментарів, будь ласка, зв'яжіться зі мною за електронною поштою - pavel.dereyes@gmail.com чи instagram/telegram - @sh1chiro.
