@@ -1,8 +1,8 @@
 ## Sh1chiro`s Roulette
 
 ![Java Version](https://img.shields.io/badge/Java-19-blue)
-[![Android Studio](https://img.shields.io/badge/Android%20Studio-4.2.2-brightgreen)]
-[![Gradle Version](https://img.shields.io/badge/Gradle-7.1.1-yellow)]
+![Android Studio](https://img.shields.io/badge/Android%20Studio-4.2.2-brightgreen)
+![Gradle Version](https://img.shields.io/badge/Gradle-7.1.1-yellow)
 
 ## Рулетка на Android
 Цей проєкт - мобільна гра "Рулетка" для Android. Гра розроблена в середовищі Android Studio з використанням мови програмування Java. Гравець може взяти участь у захоплюючій грі в рулетку, роблячи ставки та сподіваючись на удачу.
