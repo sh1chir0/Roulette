@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/roulette_background"
+    tools:context=".RouletteActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId=""
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cl_ms"
+        android:layout_marginBottom="@dimen/cl_mb"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/roulette">
+
+        <ImageButton
+            android:id="@+id/zeroButton"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="@dimen/zero_height"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/zero_button" />
+
+        <ImageButton
+            android:id="@+id/threeButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/zeroButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/three_button" />
+
+        <ImageButton
+            android:id="@+id/sixButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/threeButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/six_button" />
+
+        <ImageButton
+            android:id="@+id/oneButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/zeroButton"
+            app:srcCompat="@drawable/one_button" />
+
+        <ImageButton
+            android:id="@+id/twoButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/oneButton"
+            app:layout_constraintStart_toEndOf="@+id/zeroButton"
+            app:layout_constraintTop_toBottomOf="@+id/threeButton"
+            app:srcCompat="@drawable/two_button" />
+
+        <ImageButton
+            android:id="@+id/fourButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/oneButton"
+            app:srcCompat="@drawable/four_button" />
+
+        <ImageButton
+            android:id="@+id/fiveButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/fourButton"
+            app:layout_constraintStart_toEndOf="@+id/twoButton"
+            app:layout_constraintTop_toBottomOf="@+id/sixButton"
+            app:srcCompat="@drawable/five_button" />
+
+        <ImageButton
+            android:id="@+id/sevenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/fourButton"
+            app:srcCompat="@drawable/seven_button" />
+
+        <ImageButton
+            android:id="@+id/nineButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/sixButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/nine_button" />
+
+        <ImageButton
+            android:id="@+id/eightButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/sevenButton"
+            app:layout_constraintStart_toEndOf="@+id/fiveButton"
+            app:layout_constraintTop_toBottomOf="@+id/nineButton"
+            app:srcCompat="@drawable/eight_button" />
+
+        <ImageButton
+            android:id="@+id/tenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/sevenButton"
+            app:srcCompat="@drawable/ten_button" />
+
+        <ImageButton
+            android:id="@+id/twelveButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/nineButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/twelve_button" />
+
+        <ImageButton
+            android:id="@+id/elevenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/tenButton"
+            app:layout_constraintStart_toEndOf="@+id/eightButton"
+            app:layout_constraintTop_toBottomOf="@+id/twelveButton"
+            app:srcCompat="@drawable/eleven_button" />
+
+        <ImageButton
+            android:id="@+id/thirteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/tenButton"
+            app:srcCompat="@drawable/thirdteen_button" />
+
+        <ImageButton
+            android:id="@+id/fifteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/twelveButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/fifteen_button" />
+
+        <ImageButton
+            android:id="@+id/fourteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/thirteenButton"
+            app:layout_constraintStart_toEndOf="@+id/elevenButton"
+            app:layout_constraintTop_toBottomOf="@+id/fifteenButton"
+            app:srcCompat="@drawable/fourteen_button" />
+
+        <ImageButton
+            android:id="@+id/sixteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/thirteenButton"
+            app:srcCompat="@drawable/sixteen_button" />
+
+        <ImageButton
+            android:id="@+id/eighteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fifteenButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/eighteen_button" />
+
+        <ImageButton
+            android:id="@+id/seventeenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/sixteenButton"
+            app:layout_constraintStart_toEndOf="@+id/fourteenButton"
+            app:layout_constraintTop_toBottomOf="@+id/eighteenButton"
+            app:srcCompat="@drawable/seventeen_button" />
+
+        <ImageButton
+            android:id="@+id/nineteenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/sixteenButton"
+            app:srcCompat="@drawable/nineteen_button" />
+
+        <ImageButton
+            android:id="@+id/twentyoneButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/eighteenButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/twentyone_button" />
+
+        <ImageButton
+            android:id="@+id/twentyButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/nineteenButton"
+            app:layout_constraintStart_toEndOf="@+id/seventeenButton"
+            app:layout_constraintTop_toBottomOf="@+id/twentyoneButton"
+            app:srcCompat="@drawable/twenty_button" />
+
+        <ImageButton
+            android:id="@+id/twentytwoButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/nineteenButton"
+            app:srcCompat="@drawable/twentytwo_button" />
+
+        <ImageButton
+            android:id="@+id/twentyfourButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/twentyoneButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/twentyfour_button" />
+
+        <ImageButton
+            android:id="@+id/twentythreeButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/twentytwoButton"
+            app:layout_constraintStart_toEndOf="@+id/twentyButton"
+            app:layout_constraintTop_toBottomOf="@+id/twentyfourButton"
+            app:srcCompat="@drawable/twentythree_button" />
+
+        <ImageButton
+            android:id="@+id/twentyfiveButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/twentytwoButton"
+            app:srcCompat="@drawable/twentyfive_button" />
+
+        <ImageButton
+            android:id="@+id/twentysevenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/twentyfourButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/twentyseven_button" />
+
+        <ImageButton
+            android:id="@+id/twentysixButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/twentyfiveButton"
+            app:layout_constraintStart_toEndOf="@+id/twentythreeButton"
+            app:layout_constraintTop_toBottomOf="@+id/twentysevenButton"
+            app:srcCompat="@drawable/twentysix_button" />
+
+        <ImageButton
+            android:id="@+id/twentyeightButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/twentyfiveButton"
+            app:srcCompat="@drawable/twentyeight_button" />
+
+        <ImageButton
+            android:id="@+id/thirtyButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/twentysevenButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/thirty_button" />
+
+        <ImageButton
+            android:id="@+id/twentynineButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/twentyeightButton"
+            app:layout_constraintStart_toEndOf="@+id/twentysixButton"
+            app:layout_constraintTop_toBottomOf="@+id/thirtyButton"
+            app:srcCompat="@drawable/twentynine_button" />
+
+        <ImageButton
+            android:id="@+id/thirtyoneButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/twentyeightButton"
+            app:srcCompat="@drawable/thirtyone_button" />
+
+        <ImageButton
+            android:id="@+id/thirtythreeButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/thirtyButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/thirtythree_button" />
+
+        <ImageButton
+            android:id="@+id/thirtytwoButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/thirtyoneButton"
+            app:layout_constraintStart_toEndOf="@+id/twentynineButton"
+            app:layout_constraintTop_toBottomOf="@+id/thirtythreeButton"
+            app:srcCompat="@drawable/thirtytwo_button" />
+
+        <ImageButton
+            android:id="@+id/thirtyfourButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/thirtyoneButton"
+            app:srcCompat="@drawable/thirtyfour_button" />
+
+        <ImageButton
+            android:id="@+id/thirtysixButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/thirtythreeButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/thirtysix_button" />
+
+        <ImageButton
+            android:id="@+id/thirtyfiveButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/thirtyfourButton"
+            app:layout_constraintStart_toEndOf="@+id/thirtytwoButton"
+            app:layout_constraintTop_toBottomOf="@+id/thirtysixButton"
+            app:srcCompat="@drawable/thirtyfive_button" />
+
+        <ImageButton
+            android:id="@+id/thirtynineButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/thirtysixButton"
+            app:layout_constraintTop_toTopOf="@+id/zeroButton"
+            app:srcCompat="@drawable/two_to_one_button" />
+
+        <ImageButton
+            android:id="@+id/thirtyeightButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/thirtysevenButton"
+            app:layout_constraintStart_toEndOf="@+id/thirtyfiveButton"
+            app:layout_constraintTop_toBottomOf="@+id/thirtynineButton"
+            app:srcCompat="@drawable/two_to_one_button" />
+
+        <ImageButton
+            android:id="@+id/thirtysevenButton"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/zeroButton"
+            app:layout_constraintStart_toEndOf="@+id/thirtyfourButton"
+            app:srcCompat="@drawable/two_to_one_button" />
+
+        <ImageButton
+            android:id="@+id/fortyButton"
+            android:layout_width="@dimen/st_width"
+            android:layout_height="@dimen/st_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/oneButton"
+            app:layout_constraintTop_toBottomOf="@+id/fourButton"
+            app:srcCompat="@drawable/one_st_twelve_button" />
+
+        <ImageButton
+            android:id="@+id/fortyoneButton"
+            android:layout_width="@dimen/st_width"
+            android:layout_height="@dimen/st_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortyButton"
+            app:layout_constraintTop_toBottomOf="@+id/sixteenButton"
+            app:srcCompat="@drawable/two_nd_twelve_button" />
+
+        <ImageButton
+            android:id="@+id/fortytwoButton"
+            android:layout_width="@dimen/st_width"
+            android:layout_height="@dimen/st_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortyoneButton"
+            app:layout_constraintTop_toBottomOf="@+id/thirtyoneButton"
+            app:srcCompat="@drawable/three_rd_twelve_button" />
+
+        <ImageButton
+            android:id="@+id/fortythreeButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/oneButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortyButton"
+            app:srcCompat="@drawable/one_to_eighteen_button" />
+
+        <ImageButton
+            android:id="@+id/fortyfourButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortythreeButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortyButton"
+            app:srcCompat="@drawable/even_button" />
+
+        <ImageButton
+            android:id="@+id/fortyfiveButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortyfourButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortyoneButton"
+            app:srcCompat="@drawable/red_button" />
+
+        <ImageButton
+            android:id="@+id/fortysixButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortyfiveButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortyoneButton"
+            app:srcCompat="@drawable/black_button" />
+
+        <ImageButton
+            android:id="@+id/fortysevenButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/fortysixButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortytwoButton"
+            app:srcCompat="@drawable/odd_button" />
+
+        <ImageButton
+            android:id="@+id/fortyeightButton"
+            android:layout_width="@dimen/even_width"
+            android:layout_height="@dimen/even_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/fortytwoButton"
+            app:layout_constraintStart_toEndOf="@+id/fortysevenButton"
+            app:layout_constraintTop_toBottomOf="@+id/fortytwoButton"
+            app:srcCompat="@drawable/nineteen_to_thirtysix_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="@dimen/spin_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/spin_mb"
+        android:background="@drawable/spin_button"
+        android:fontFamily="@font/comic_neue_light"
+        android:onClick="onStart"
+        android:text="@string/spin_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/spin_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/test" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/balance_ms"
+        android:fontFamily="@font/comic_neue_light"
+        android:text="Balance:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/balance_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="@dimen/money_background_width"
+        android:layout_height="@dimen/money_background_height"
+        android:layout_marginBottom="@dimen/money_background_mb"
+        android:layout_marginLeft="@dimen/money_background_ml"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/balance_background" />
+
+    <TextView
+        android:id="@+id/balanceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_light"
+        android:text="$760"
+        android:textColor="@color/balance"
+        android:textSize="@dimen/money_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_light"
+        android:text="Rate:"
+        android:textColor="@color/white"
+        android:textSize="@dimen/balance_text"
+        android:textStyle="bold"
+        android:layout_marginRight="@dimen/balance_mr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="@dimen/money_background_width"
+        android:layout_height="@dimen/money_background_height"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/balance_background" />
+
+    <TextView
+        android:id="@+id/rateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comic_neue_light"
+        android:text="$0"
+        android:textColor="@color/rate"
+        android:textSize="@dimen/money_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageView14">
+
+        <ImageButton
+            android:id="@+id/oneChipButton"
+            android:layout_width="@dimen/chip"
+            android:layout_height="@dimen/chip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chip_one" />
+
+        <ImageButton
+            android:id="@+id/fiveChipButton"
+            android:layout_width="@dimen/chip"
+            android:layout_height="@dimen/chip"
+            android:layout_marginStart="@dimen/chip_ms"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chip_five" />
+
+        <ImageButton
+            android:id="@+id/twentyfiveChipButton"
+            android:layout_width="@dimen/chip"
+            android:layout_height="@dimen/chip"
+            android:layout_marginStart="@dimen/chip_ms"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chip_twentyfive" />
+
+        <ImageButton
+            android:id="@+id/fiftyChipButton"
+            android:layout_width="@dimen/chip"
+            android:layout_height="@dimen/chip"
+            android:layout_marginStart="@dimen/chip_ms"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chip_fifth" />
+
+        <ImageButton
+            android:id="@+id/onehundredChipButton"
+            android:layout_width="@dimen/chip"
+            android:layout_height="@dimen/chip"
+            android:layout_marginStart="@dimen/chip_ms"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/chip_onehundred" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/roulette"
+        android:layout_width="@dimen/roulette_width"
+        android:layout_height="@dimen/roulette_height"
+        android:layout_marginStart="@dimen/roulette_ms"
+        android:layout_marginBottom="@dimen/roulette_mb"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/updated_roulette" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="@dimen/arrow_width"
+        android:layout_height="@dimen/arrow_height"
+        android:layout_marginBottom="@dimen/arrow_mb"
+        app:layout_constraintBottom_toTopOf="@+id/roulette"
+        app:layout_constraintEnd_toEndOf="@+id/roulette"
+        app:layout_constraintStart_toStartOf="@+id/roulette"
+        app:srcCompat="@drawable/green_arrow" />
+
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/result_mb"
+        android:fontFamily="@font/comic_neue_light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/money_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView18"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintStart_toStartOf="@+id/imageView18" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/buttons_background_width"
+        android:layout_height="@dimen/buttons_background_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner_for_btns" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ll_me"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="@dimen/home_width"
+            android:layout_height="@dimen/home_height"
+            android:background="@android:color/transparent"
+            android:onClick="onHome"
+
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home_small" />
+
+        <ImageButton
+            android:id="@+id/shopButton"
+            android:layout_width="@dimen/home_width"
+            android:layout_height="@dimen/home_width"
+            android:layout_marginLeft="@dimen/shop_ml"
+            android:background="@android:color/transparent"
+            android:onClick="onShop"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/cart_small" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

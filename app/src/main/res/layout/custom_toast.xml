@@ -1,0 +1,23 @@
+<!-- res/layout/custom_toast.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toast_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/black"
+    android:padding="6dp">
+
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/comic_neue_light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:background="@color/toastColor"
+        />
+
+</LinearLayout>

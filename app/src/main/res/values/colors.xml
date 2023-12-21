@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="start_button">#8c4ea3</color>
+    <color name="roulette_background">#2b491f</color>
+    <color name="balance">#fafd00</color>
+    <color name="rate">#7b0004</color>
+    <color name="spin_button">#fab73d</color>
+
+    <color name="winColor">#00FF00</color>
+    <color name="loseColor">#FF0000</color>
+    <color name="winTextColor">#000000</color>
+    <color name="loseTextColor">#FFFFFF</color>
+    <color name="zeroTextColor">#0F02C8</color>
+
+    <color name="toastColor">#227700</color>
+</resources>

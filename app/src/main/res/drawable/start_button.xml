@@ -1,0 +1,7 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Задаємо колір фону -->
+    <!-- Задаємо заокруглення вуглів -->
+    <corners android:radius="30dp" />
+</shape>

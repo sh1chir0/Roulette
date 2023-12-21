@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_width">36dp</dimen>
+    <dimen name="image_height">36dp</dimen>
+
+    <!--    250 250-->
+    <dimen name="roulette_width">@dimen/_136sdp</dimen>
+    <dimen name="roulette_height">@dimen/_136sdp</dimen>
+    <dimen name="roulette_ms">@dimen/_1sdp</dimen>
+    <dimen name="roulette_mb">@dimen/_15sdp</dimen>
+
+
+    <!--    20 20-->
+    <dimen name="arrow_width">@dimen/_15sdp</dimen>
+    <dimen name="arrow_height">@dimen/_15sdp</dimen>
+    <dimen name="arrow_mb">@dimen/_2sdp</dimen>
+
+    <dimen name="result_mb">@dimen/_2sdp</dimen>
+
+
+    <dimen name="cl_ms">@dimen/_1sdp</dimen>
+    <dimen name="cl_mb">@dimen/_35sdp</dimen>
+
+    <!--    50 200-->
+    <dimen name="zero_width">@dimen/_35sdp</dimen>
+    <dimen name="zero_height">@dimen/_132sdp</dimen>
+    <!--        34 68-->
+    <dimen name="card_width">@dimen/_22sdp</dimen>
+    <dimen name="card_height">@dimen/_44sdp</dimen>
+
+    <!--    136 35 -->
+    <dimen name="st_width">@dimen/_88sdp</dimen>
+    <dimen name="st_height">@dimen/_22sdp</dimen>
+
+    <!--    68 35-->
+    <dimen name="even_width">@dimen/_44sdp</dimen>
+    <dimen name="even_height">@dimen/_22sdp</dimen>
+
+    <!--    36 36-->
+    <dimen name="chip">@dimen/_25sdp</dimen>
+    <dimen name="chip_ms">@dimen/_10sdp</dimen>
+
+
+    <!--    50 350-->
+    <dimen name="spin_width">@dimen/_35sdp</dimen>
+    <dimen name="spin_height">@dimen/_280sdp</dimen>
+    <dimen name="spin_mb">@dimen/_35sdp</dimen>
+    <dimen name="spin_text">@dimen/_18sdp</dimen>
+
+
+
+    <!--    0 48-->
+    <dimen name="bottom_height">@dimen/_35sdp</dimen>
+
+    <!--    116 41-->
+    <dimen name="money_background_width">@dimen/_90sdp</dimen>
+    <dimen name="money_background_height">@dimen/_27sdp</dimen>
+    <dimen name="money_background_mb">@dimen/_4sdp</dimen>
+    <dimen name="money_background_ml">@dimen/_4sdp</dimen>
+    <dimen name="money_text">@dimen/_20sdp</dimen>
+    <dimen name="balance_text">@dimen/_18sdp</dimen>
+    <dimen name="balance_ms">@dimen/_8sdp</dimen>
+    <dimen name="balance_mr">@dimen/_4sdp</dimen>
+
+
+
+
+    <!--    140 50-->
+    <dimen name="buttons_background_width">@dimen/_101sdp</dimen>
+    <dimen name="buttons_background_height">@dimen/_36sdp</dimen>
+    <dimen name="ll_me">@dimen/_1sdp</dimen>
+    <dimen name="shop_ml">@dimen/_15sdp</dimen>
+
+
+    <!--    33 36-->
+    <dimen name="home_width">@dimen/_23sdp</dimen>
+    <dimen name="home_height">@dimen/_25sdp</dimen>
+
+
+    <dimen name="buy_b_width">@dimen/_420sdp</dimen>
+    <dimen name="buy_b_height">@dimen/_200sdp</dimen>
+
+    <dimen name="buy_block_width">@dimen/_380sdp</dimen>
+    <dimen name="buy_block_height">@dimen/_26sdp</dimen>
+    <dimen name="buy_block_mt">@dimen/_10sdp</dimen>
+    <dimen name="buy_text">@dimen/_30sdp</dimen>
+
+    <dimen name="guardian_width">@dimen/_126sdp</dimen>
+    <dimen name="guardian_height">@dimen/_190sdp</dimen>
+
+
+</resources>
